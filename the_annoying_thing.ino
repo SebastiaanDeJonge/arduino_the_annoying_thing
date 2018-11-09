@@ -6,7 +6,9 @@ int ledBlue = 13;
 int piezoPin = 9;
 int potPin = 2;
 
-int interval = 100;
+int interval = 0;
+int frequencyLowerBound = 100;
+int frequencyUpperBound = 400;
 
 void setup() {
   pinMode(ledWhite, OUTPUT);
@@ -17,12 +19,10 @@ void setup() {
 
 void loop() {
   interval = analogRead(potPin);  
-
-  unsigned long currentMillis = millis();
   
   if (interval > 1) {
     killLeds();
-    tone(piezoPin, random(100,400), interval);
+    tone(piezoPin, random(frequencyLowerBound, frequencyUpperBound), interval);
     digitalWrite(random(10,14), HIGH);
     delay(interval);
   } else {
