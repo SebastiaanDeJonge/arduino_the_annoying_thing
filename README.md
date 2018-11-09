@@ -4,9 +4,9 @@ This little projects creates random sounds through the piezo speaker. The range 
 
 # Components
 
-1x Solderless breadboard
-4x LED
-4x 220 Ohm resistor
-1x Piezo speaker
-1x 100 Ohm resistor
-1x Potentiometer
+* 1x Solderless breadboard
+* 4x LED
+* 4x 220 Ohm resistor
+* 1x Piezo speaker
+* 1x 100 Ohm resistor
+* 1x Potentiometer
